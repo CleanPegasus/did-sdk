@@ -33,8 +33,11 @@ class Identity {
       dobHash: DoBHash,
     };
 
-    const tx = await this.dIdContract.connect(signer).mint(address, identity);
-    return tx.hash;
+		console.log(identity);
+
+    // const tx = await this.dIdContract.connect(signer).mint(address, identity);
+    // return tx.hash;
+		return ""
   }
 
 	async getIdentity(address: string): Promise<IdentityType> {
